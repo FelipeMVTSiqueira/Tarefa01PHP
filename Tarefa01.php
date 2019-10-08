@@ -82,19 +82,24 @@
 <?php 
     $animais = ["Leão", "Cavalo", "Cachorro", "Canário", "Camelo"];
     var_dump ($animais);
+    echo "<br>"."<br>";
     array_push($animais,"Canária","Camela");
     print_r($animais);
 
     echo "<br>"."Animais que eu gosto são: ".$animais[0]." ".$animais[1]." ".$animais[2]." ".$animais[3]." ".$animais[4]." ".$animais[5]." ".$animais[6]."."."<br>";
+    echo "<br>";
 
     $animais[0] = "Lambari";
     var_dump($animais);
+    echo "<br>"."<br>";
 
     $animais[100] = "Macaco";
     var_dump($animais);
+    echo "<br>"."<br>";
 
     $animais[16] = "Girafo";
     var_dump($animais);
+    echo "<br>"."<br>";
 
 ?>
 
@@ -107,10 +112,28 @@
         "Placa" => "BAB-8500"
     ];
     var_dump($carro);
+    echo "<br>"."<br>";
 
     $nomeDono = ["Nome do dono do carro" => "Felipe Siqueira"];
     array_splice( $carro, 0, 0, $nomeDono ); 
     var_dump($carro);
+    echo "<br>"."<br>";
     $carro[14] = ('Nome da seguradora" => "Este veículo não possui seguro.');
     var_dump($carro);
+    echo "<br>";
+?>
+
+<?php 
+    $inteiro = 2;
+    $decimal = 0.5;
+    $soma = $inteiro + $decimal;
+    $subtracao = $inteiro - $decimal;
+    $divisao = $inteiro/$decimal;
+    $multiplicacao = $inteiro*$decimal;
+    $resto = ($decimal % $inteiro);
+    echo "<br>".$soma;
+    echo "<br>".$subtracao;
+    echo "<br>".$divisao;
+    echo "<br>".$multiplicacao;
+    echo "<br>".$resto;
 ?>
