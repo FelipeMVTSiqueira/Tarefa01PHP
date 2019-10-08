@@ -136,4 +136,19 @@
     echo "<br>".$divisao;
     echo "<br>".$multiplicacao;
     echo "<br>".$resto;
+
+    $inteiro = $inteiro+1+5;
+    $decimal = $decimal+1-0.6;
+    $resultado = ($inteiro*2+$decimal)/($inteiro/2);
+    echo "<br>".$resultado;
+    echo "<br>"."<br>";
+?>
+
+<?php 
+    $varUm = "Olá";
+    $varDois = "Mundo!";
+    $novAr = $varUm." ".$varDois;
+    echo $novAr."<br>";
+    $maisUma = $novAr." "."PHP é o máximo!";
+    echo $maisUma;
 ?>
